@@ -1,53 +1,7 @@
 "use client"
 
 import { motion } from "motion/react"
-import {
-  Bot,
-  ChartNoAxesCombined,
-  DatabaseZap,
-  MessageSquareText,
-  Network,
-} from "lucide-react"
-import { cn } from "@/lib/utils"
 import { SlideLayout } from "@/components/slides/slide-layout"
-
-const ITEMS = [
-  {
-    id: "bento1",
-    title: "AI для клиентских коммуникаций",
-    text: "Ищем сигналы, темы и причины обращений в больших массивах диалогов.",
-    icon: Bot,
-    accent: "primary",
-  },
-  {
-    id: "bento2",
-    title: "Интеграции данных",
-    text: "Соединяем источники, потоки и витрины для быстрых исследований.",
-    icon: DatabaseZap,
-    accent: "accent",
-  },
-  {
-    id: "bento3",
-    title: "Сервис инсайтов",
-    text: "Главный фокус команды: единая платформа, где поиск, аналитика и визуализация складываются в продукт. Поэтому дальше — Insight Service.",
-    icon: MessageSquareText,
-    accent: "hero",
-  },
-  {
-    id: "bento4",
-    title: "Аналитика качества",
-    text: "Сводим метрики, динамику и проблемные зоны в понятные продуктовые выводы.",
-    icon: ChartNoAxesCombined,
-    accent: "accent",
-  },
-  {
-    id: "bento5",
-    title: "Поиск инсайтов",
-    text: "Помогаем командам быстро переходить от вопроса к проверяемому ответу.",
-    icon: Network,
-    accent: "accent",
-  },
-] as const
 
 export function SlideFocus() {
   return (
@@ -75,75 +29,18 @@ export function SlideFocus() {
           </p>
         </motion.div>
 
-        <div
-          className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:h-[440px] lg:grid-cols-[repeat(9,minmax(0,1fr))] lg:grid-rows-[repeat(7,minmax(0,1fr))] lg:gap-0"
-          style={{
-            gridTemplateAreas:
-              '"bento1 bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento4" "bento1 bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento4" "bento1 bento1 bento1 bento3 bento3 bento3 bento2 bento2 bento2" "bento1 bento1 bento1 bento3 bento3 bento3 bento2 bento2 bento2" "bento5 bento5 bento5 bento3 bento3 bento3 bento2 bento2 bento2" "bento5 bento5 bento5 bento5 bento5 bento5 bento2 bento2 bento2" "bento5 bento5 bento5 bento5 bento5 bento5 bento2 bento2 bento2"',
-          }}
+        <motion.div
+          initial={{ opacity: 0, y: 18, scale: 0.985 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.62, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
+          className="relative aspect-[1792/986] w-full overflow-hidden rounded-2xl border border-primary/18 bg-card shadow-[0_18px_42px_rgba(0,0,0,0.10)]"
         >
-          {ITEMS.map((item, index) => {
-            const Icon = item.icon
-            return (
-              <motion.article
-                key={item.title}
-                initial={{ opacity: 0, y: 22 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.48, delay: 0.12 + index * 0.06 }}
-                className={cn(
-                  "group relative m-1 overflow-hidden rounded-xl border p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.10)]",
-                  item.accent === "hero"
-                    ? "border-primary bg-primary text-primary-foreground"
-                    : item.accent === "accent"
-                      ? "border-accent/45 bg-accent/12"
-                      : "border-primary/45 bg-primary/10",
-                )}
-                style={{ gridArea: item.id }}
-              >
-                <div
-                  className={cn(
-                    "absolute right-0 top-0 h-24 w-24 translate-x-8 -translate-y-8 rounded-full",
-                    item.accent === "hero"
-                      ? "bg-white/18"
-                      : item.accent === "accent"
-                        ? "bg-accent/16"
-                        : "bg-primary/16",
-                  )}
-                />
-                <div
-                  className={cn(
-                    "float-left mr-3 mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg",
-                    item.accent === "hero"
-                      ? "bg-white/18 text-primary-foreground"
-                      : item.accent === "accent"
-                        ? "bg-accent text-accent-foreground"
-                        : "bg-primary text-primary-foreground",
-                  )}
-                >
-                  <Icon className="h-4.5 w-4.5" />
-                </div>
-                <h3
-                  className={cn(
-                    "text-base font-semibold leading-tight",
-                    item.accent === "hero" ? "text-primary-foreground" : "text-foreground",
-                  )}
-                >
-                  {item.title}
-                </h3>
-                <p
-                  className={cn(
-                    "mt-2 text-[13px] leading-relaxed",
-                    item.accent === "hero"
-                      ? "text-primary-foreground/86"
-                      : "text-muted-foreground",
-                  )}
-                >
-                  {item.text}
-                </p>
-              </motion.article>
-            )
-          })}
-        </div>
+          <img
+            src="/focus-puzzle.png"
+            alt="Фокус команды: сервис инсайтов, AI, аналитика качества, поиск инсайтов и интеграции данных"
+            className="h-full w-full object-cover"
+          />
+        </motion.div>
       </div>
     </SlideLayout>
   )
