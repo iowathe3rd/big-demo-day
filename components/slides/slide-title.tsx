@@ -8,9 +8,9 @@ import { SlideLayout } from "@/components/slides/slide-layout"
 function FloatingBackground() {
   const shards = [
     {
-      label: "обращений",
-      value: "13 428",
-      delta: "+12%",
+      label: "диалогов",
+      value: "1M+",
+      delta: "в базе",
       w: 188,
       h: 118,
       x: "8%",
@@ -20,9 +20,9 @@ function FloatingBackground() {
       tone: "primary",
     },
     {
-      label: "доля негатива",
-      value: "8.4%",
-      delta: "-2.1%",
+      label: "мониторинг",
+      value: "24/7",
+      delta: "в работе",
       w: 168,
       h: 104,
       x: "72%",
@@ -32,9 +32,9 @@ function FloatingBackground() {
       tone: "accent",
     },
     {
-      label: "активных тем",
-      value: "47",
-      delta: "+6",
+      label: "потоков",
+      value: "7",
+      delta: "каналов",
       w: 198,
       h: 126,
       x: "78%",
@@ -44,9 +44,9 @@ function FloatingBackground() {
       tone: "primary",
     },
     {
-      label: "точность тегов",
-      value: "94%",
-      delta: "+4%",
+      label: "параметров",
+      value: "40+",
+      delta: "AI-классификация",
       w: 160,
       h: 124,
       x: "12%",
@@ -56,15 +56,63 @@ function FloatingBackground() {
       tone: "accent",
     },
     {
-      label: "поиск ответа",
-      value: "1.8 мин",
-      delta: "быстрее",
-      w: 156,
-      h: 96,
-      x: "46%",
-      y: "74%",
+      label: "real-time анализ",
+      value: "~30 сек",
+      delta: "на обращение",
+      w: 210,
+      h: 116,
+      x: "44%",
+      y: "72%",
       d: 2,
       dur: 32,
+      tone: "primary",
+    },
+    {
+      label: "CSAT",
+      value: "4.9+",
+      delta: "оценка сервиса",
+      w: 166,
+      h: 104,
+      x: "34%",
+      y: "16%",
+      d: 5,
+      dur: 29,
+      tone: "accent",
+    },
+    {
+      label: "MAU",
+      value: "75+",
+      delta: "активных пользователей",
+      w: 174,
+      h: 108,
+      x: "27%",
+      y: "70%",
+      d: 1,
+      dur: 31,
+      tone: "primary",
+    },
+    {
+      label: "удержание",
+      value: "110",
+      delta: "лидов в месяц",
+      w: 166,
+      h: 104,
+      x: "66%",
+      y: "72%",
+      d: 2.8,
+      dur: 33,
+      tone: "accent",
+    },
+    {
+      label: "коммуникаций",
+      value: "6000+",
+      delta: "за месяц",
+      w: 196,
+      h: 112,
+      x: "52%",
+      y: "18%",
+      d: 3.6,
+      dur: 27,
       tone: "primary",
     },
   ]
@@ -148,8 +196,8 @@ export function SlideTitle() {
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 flex flex-col items-center"
       >
-        <InsightLogo size="xl" className="flex-col gap-5 sm:flex-row sm:gap-4" />
-        <p className="mt-8 max-w-xl text-balance text-base leading-relaxed text-muted-foreground sm:text-lg">
+        <InsightLogo size="hero" className="flex-col gap-5 sm:flex-row sm:gap-4" />
+        <p className="mt-9 max-w-2xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl">
           Платформа агрегации, анализа и исследования клиентской обратной связи
         </p>
       </motion.div>

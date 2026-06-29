@@ -9,12 +9,13 @@ export function InsightLogo({
   size = "md",
 }: {
   className?: string
-  size?: "md" | "lg" | "xl"
+  size?: "md" | "lg" | "xl" | "hero"
 }) {
   const text = {
     md: "text-xl",
     lg: "text-3xl",
     xl: "text-5xl",
+    hero: "text-7xl sm:text-8xl",
   }[size]
   return (
     <div className={cn("flex items-center", className)}>
