@@ -6,7 +6,7 @@ import { SlideLayout } from "@/components/slides/slide-layout"
 
 export function SlideClosing() {
   return (
-    <SlideLayout showPixelBlast contentClassName="items-center justify-center text-center">
+    <SlideLayout contentClassName="items-center justify-center text-center">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}

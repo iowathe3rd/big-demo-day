@@ -140,7 +140,7 @@ function FloatingBackground() {
 
 export function SlideTitle() {
   return (
-    <SlideLayout showPixelBlast contentClassName="items-center justify-center text-center">
+    <SlideLayout contentClassName="items-center justify-center text-center">
       <FloatingBackground />
       <motion.div
         initial={{ opacity: 0, y: 16 }}
