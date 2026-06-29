@@ -6,7 +6,7 @@ import { SlideLayout } from "@/components/slides/slide-layout"
 export function SlideFocus() {
   return (
     <SlideLayout contentClassName="justify-center">
-      <div className="relative flex w-full flex-col gap-6">
+      <div className="relative flex w-full flex-col gap-4">
         <motion.div
           initial={{ opacity: 0, x: -18 }}
           animate={{ opacity: 1, x: 0 }}
@@ -33,7 +33,7 @@ export function SlideFocus() {
           initial={{ opacity: 0, y: 18, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.62, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
-          className="relative aspect-[1792/986] w-full overflow-hidden rounded-2xl border border-primary/18 bg-card shadow-[0_18px_42px_rgba(0,0,0,0.10)]"
+          className="relative mx-auto flex aspect-[3/2] h-[55vh] max-h-[560px] min-h-[360px] max-w-full items-center justify-center overflow-hidden rounded-2xl border border-primary/18 bg-card shadow-[0_18px_42px_rgba(0,0,0,0.10)]"
         >
           <img
             src="/focus-puzzle.png"
