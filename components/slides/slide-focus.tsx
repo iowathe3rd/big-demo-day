@@ -7,7 +7,6 @@ import {
   DatabaseZap,
   MessageSquareText,
   Network,
-  ShieldCheck,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { SlideLayout } from "@/components/slides/slide-layout"
@@ -48,20 +47,6 @@ const ITEMS = [
     icon: Network,
     accent: "accent",
   },
-  {
-    id: "bento6",
-    title: "MLOps и надежность",
-    text: "Делаем сценарии воспроизводимыми, наблюдаемыми и готовыми к эксплуатации.",
-    icon: Network,
-    accent: "primary",
-  },
-  {
-    id: "bento7",
-    title: "Безопасный контур",
-    text: "Работаем внутри банковских ограничений и аккуратно обращаемся с данными.",
-    icon: ShieldCheck,
-    accent: "accent",
-  },
 ] as const
 
 export function SlideFocus() {
@@ -94,7 +79,7 @@ export function SlideFocus() {
           className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:h-[440px] lg:grid-cols-[repeat(9,minmax(0,1fr))] lg:grid-rows-[repeat(7,minmax(0,1fr))] lg:gap-0"
           style={{
             gridTemplateAreas:
-              '"bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento6 bento6" "bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento6 bento6" "bento1 bento1 bento3 bento3 bento3 bento3 bento3 bento6 bento6" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento6 bento6" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento7 bento7" "bento2 bento2 bento5 bento5 bento5 bento5 bento5 bento7 bento7" "bento2 bento2 bento5 bento5 bento5 bento5 bento5 bento7 bento7"',
+              '"bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento5 bento5" "bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento5 bento5" "bento1 bento1 bento3 bento3 bento3 bento3 bento3 bento5 bento5" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento5 bento5" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento5 bento5" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento5 bento5" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento5 bento5"',
           }}
         >
           {ITEMS.map((item, index) => {
