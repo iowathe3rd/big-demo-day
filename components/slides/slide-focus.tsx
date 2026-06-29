@@ -79,7 +79,7 @@ export function SlideFocus() {
           className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:h-[440px] lg:grid-cols-[repeat(9,minmax(0,1fr))] lg:grid-rows-[repeat(7,minmax(0,1fr))] lg:gap-0"
           style={{
             gridTemplateAreas:
-              '"bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento5 bento5" "bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento5 bento5" "bento1 bento1 bento3 bento3 bento3 bento3 bento3 bento5 bento5" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento5 bento5" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento5 bento5" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento5 bento5" "bento2 bento2 bento3 bento3 bento3 bento3 bento3 bento5 bento5"',
+              '"bento1 bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento4" "bento1 bento1 bento1 bento4 bento4 bento4 bento4 bento4 bento4" "bento1 bento1 bento1 bento3 bento3 bento3 bento2 bento2 bento2" "bento1 bento1 bento1 bento3 bento3 bento3 bento2 bento2 bento2" "bento5 bento5 bento5 bento3 bento3 bento3 bento2 bento2 bento2" "bento5 bento5 bento5 bento5 bento5 bento5 bento2 bento2 bento2" "bento5 bento5 bento5 bento5 bento5 bento5 bento2 bento2 bento2"',
           }}
         >
           {ITEMS.map((item, index) => {
