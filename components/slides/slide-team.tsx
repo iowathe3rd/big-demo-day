@@ -9,7 +9,7 @@ const TEAM = [
   {
     name: "Анель Абдыкалыкова",
     role: "System Analyst",
-    img: "/anel.JPG",
+    img: "/anel.jpg",
     tone: "border-primary",
     imageClass: "",
     imageFit: "cover",
@@ -33,7 +33,7 @@ const TEAM = [
   {
     name: "Зулуфов Руслан",
     role: "Middle ML & AI Engineer",
-    img: "/ruslan.JPG",
+    img: "/ruslan.jpg",
     tone: "border-accent",
     imageClass: "",
     imageFit: "cover",
@@ -41,7 +41,7 @@ const TEAM = [
   {
     name: "Тыныбекова Каныкей",
     role: "Product Owner",
-    img: "/kanykei.JPG",
+    img: "/kanykei.jpg",
     tone: "border-primary",
     imageClass: "",
     imageFit: "cover",
@@ -95,18 +95,19 @@ export function SlideTeam() {
                       src={member.img}
                       alt=""
                       fill
-                      sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 90vw"
+                      sizes="(min-width: 1024px) 18vw, (min-width: 640px) 45vw, 90vw"
                       className="scale-110 object-cover blur-xl saturate-110"
                       aria-hidden="true"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-white/18" />
                     <Image
                       src={member.img}
                       alt={`${member.name}, ${member.role}`}
                       fill
-                      sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 90vw"
+                      sizes="(min-width: 1024px) 18vw, (min-width: 640px) 45vw, 90vw"
                       className={cn("object-contain transition-transform duration-300", member.imageClass)}
-                      priority={index < 2}
+                      priority={index === 0}
                     />
                   </>
                 ) : (
@@ -114,9 +115,9 @@ export function SlideTeam() {
                     src={member.img}
                     alt={`${member.name}, ${member.role}`}
                     fill
-                    sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 90vw"
+                    sizes="(min-width: 1024px) 18vw, (min-width: 640px) 45vw, 90vw"
                     className={cn("object-cover transition-transform duration-300", member.imageClass)}
-                    priority={index < 2}
+                    priority={index === 0}
                   />
                 )}
                 <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/18 to-transparent" />
