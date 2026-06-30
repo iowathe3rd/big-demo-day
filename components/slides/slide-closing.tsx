@@ -15,7 +15,8 @@ export function SlideClosing() {
       >
         <InsightLogo size="xl" className="flex-col gap-5 sm:flex-row sm:gap-4" />
         <p className="mt-8 text-2xl font-medium text-muted-foreground sm:text-3xl">
-          Спасибо за внимание
+          <span className="text-primary">Спасибо</span> за{" "}
+          <span className="text-accent">внимание</span>
         </p>
       </motion.div>
     </SlideLayout>

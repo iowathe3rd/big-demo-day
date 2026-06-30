@@ -19,12 +19,15 @@ export function SlideFocus() {
               Чем мы занимаемся
             </span>
             <h2 className="mt-3 max-w-3xl font-heading text-4xl font-semibold leading-none tracking-normal text-foreground sm:text-5xl">
-              Наш главный фокус — сервис инсайтов
+              Наш главный <span className="text-primary">фокус</span> —{" "}
+              <span className="text-accent">сервис инсайтов</span>
             </h2>
           </div>
 
           <p className="max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground lg:justify-self-end lg:text-right">
-            Мы строим продукты на пересечении данных, аналитики и AI, чтобы
+            Мы строим продукты на пересечении{" "}
+            <span className="font-semibold text-primary">данных</span>,{" "}
+            <span className="font-semibold text-accent">аналитики</span> и AI, чтобы
             превращать клиентские коммуникации в понятные решения для бизнеса.
           </p>
         </motion.div>

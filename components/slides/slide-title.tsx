@@ -198,7 +198,9 @@ export function SlideTitle() {
       >
         <InsightLogo size="hero" className="flex-col gap-5 sm:flex-row sm:gap-4" />
         <p className="mt-9 max-w-2xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Платформа агрегации, анализа и исследования клиентской обратной связи
+          Платформа <span className="font-semibold text-primary">агрегации</span>,{" "}
+          <span className="font-semibold text-accent">анализа</span> и исследования
+          клиентской обратной связи
         </p>
       </motion.div>
     </SlideLayout>
