@@ -9,7 +9,7 @@ const TEAM = [
   {
     name: "Анель Абдыкалыкова",
     role: "System Analyst",
-    img: "/anel.jpg",
+    img: "/avatar-anel.jpg",
     tone: "border-primary",
     imageClass: "",
     imageFit: "cover",
@@ -17,7 +17,7 @@ const TEAM = [
   {
     name: "Беглеров Бауржан",
     role: "Middle ML & AI Engineer",
-    img: "/baurzhan-upright.jpg",
+    img: "/avatar-baurzhan.jpg",
     tone: "border-accent",
     imageClass: "object-[50%_44%]",
     imageFit: "contain",
@@ -25,7 +25,7 @@ const TEAM = [
   {
     name: "Умбет Санжар",
     role: "Senior ML & AI Engineer",
-    img: "/sanzhar.jpg",
+    img: "/avatar-sanzhar.jpg",
     tone: "border-primary",
     imageClass: "scale-[1.42] object-[50%_76%]",
     imageFit: "cover",
@@ -33,7 +33,7 @@ const TEAM = [
   {
     name: "Зулуфов Руслан",
     role: "Middle ML & AI Engineer",
-    img: "/ruslan.jpg",
+    img: "/avatar-ruslan.jpg",
     tone: "border-accent",
     imageClass: "",
     imageFit: "cover",
@@ -41,7 +41,7 @@ const TEAM = [
   {
     name: "Тыныбекова Каныкей",
     role: "Product Owner",
-    img: "/kanykei.jpg",
+    img: "/avatar-kanykei.jpg",
     tone: "border-primary",
     imageClass: "",
     imageFit: "cover",
